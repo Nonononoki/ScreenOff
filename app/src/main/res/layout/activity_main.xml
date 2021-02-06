@@ -7,9 +7,35 @@
     tools:context=".MainActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:gravity="center" >
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <Button
+            android:id="@+id/min_brightness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Min. Brightness"
+            app:backgroundTint="#4CAF50" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <Button
+            android:id="@+id/off_screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turn off Screen"
+            app:backgroundTint="#4CAF50" />
 
         <TextView
             android:id="@+id/delayTextView"
@@ -18,34 +44,12 @@
             android:text="Delay in s" />
 
         <EditText
-            android:id="@+id/delay"
+            android:id="@+id/off_screen_delay"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="number"
             android:text="10" />
-
-        <TextView
-            android:id="@+id/BrightnessView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Brightness" />
-
-        <EditText
-            android:id="@+id/brightness"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="number"
-            android:text="0" />
     </LinearLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_media_play" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
